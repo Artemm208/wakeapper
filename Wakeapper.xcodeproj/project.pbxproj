@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECD9B619215161DE00D92DD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9B618215161DE00D92DD8 /* AppDelegate.swift */; };
+		ECD9B61B215161DE00D92DD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9B61A215161DE00D92DD8 /* ViewController.swift */; };
+		ECD9B61E215161DE00D92DD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD9B61C215161DE00D92DD8 /* Main.storyboard */; };
+		ECD9B620215161DF00D92DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD9B61F215161DF00D92DD8 /* Assets.xcassets */; };
+		ECD9B623215161DF00D92DD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD9B621215161DF00D92DD8 /* LaunchScreen.storyboard */; };
+		ECD9B62E215161DF00D92DD8 /* WakeapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9B62D215161DF00D92DD8 /* WakeapperTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECD9B62A215161DF00D92DD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECD9B60D215161DE00D92DD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECD9B614215161DE00D92DD8;
+			remoteInfo = Wakeapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECD9B615215161DE00D92DD8 /* Wakeapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wakeapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD9B618215161DE00D92DD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECD9B61A215161DE00D92DD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECD9B61D215161DE00D92DD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECD9B61F215161DF00D92DD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECD9B622215161DF00D92DD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECD9B624215161DF00D92DD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD9B629215161DF00D92DD8 /* WakeapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakeapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD9B62D215161DF00D92DD8 /* WakeapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeapperTests.swift; sourceTree = "<group>"; };
+		ECD9B62F215161DF00D92DD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECD9B612215161DE00D92DD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD9B626215161DF00D92DD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECD9B60C215161DE00D92DD8 = {
+			isa = PBXGroup;
+			children = (
+				ECD9B617215161DE00D92DD8 /* Wakeapper */,
+				ECD9B62C215161DF00D92DD8 /* WakeapperTests */,
+				ECD9B616215161DE00D92DD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECD9B616215161DE00D92DD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECD9B615215161DE00D92DD8 /* Wakeapper.app */,
+				ECD9B629215161DF00D92DD8 /* WakeapperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECD9B617215161DE00D92DD8 /* Wakeapper */ = {
+			isa = PBXGroup;
+			children = (
+				ECD9B618215161DE00D92DD8 /* AppDelegate.swift */,
+				ECD9B61A215161DE00D92DD8 /* ViewController.swift */,
+				ECD9B61C215161DE00D92DD8 /* Main.storyboard */,
+				ECD9B61F215161DF00D92DD8 /* Assets.xcassets */,
+				ECD9B621215161DF00D92DD8 /* LaunchScreen.storyboard */,
+				ECD9B624215161DF00D92DD8 /* Info.plist */,
+			);
+			path = Wakeapper;
+			sourceTree = "<group>";
+		};
+		ECD9B62C215161DF00D92DD8 /* WakeapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECD9B62D215161DF00D92DD8 /* WakeapperTests.swift */,
+				ECD9B62F215161DF00D92DD8 /* Info.plist */,
+			);
+			path = WakeapperTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECD9B614215161DE00D92DD8 /* Wakeapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECD9B632215161DF00D92DD8 /* Build configuration list for PBXNativeTarget "Wakeapper" */;
+			buildPhases = (
+				ECD9B611215161DE00D92DD8 /* Sources */,
+				ECD9B612215161DE00D92DD8 /* Frameworks */,
+				ECD9B613215161DE00D92DD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wakeapper;
+			productName = Wakeapper;
+			productReference = ECD9B615215161DE00D92DD8 /* Wakeapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECD9B628215161DF00D92DD8 /* WakeapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECD9B635215161E000D92DD8 /* Build configuration list for PBXNativeTarget "WakeapperTests" */;
+			buildPhases = (
+				ECD9B625215161DF00D92DD8 /* Sources */,
+				ECD9B626215161DF00D92DD8 /* Frameworks */,
+				ECD9B627215161DF00D92DD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECD9B62B215161DF00D92DD8 /* PBXTargetDependency */,
+			);
+			name = WakeapperTests;
+			productName = WakeapperTests;
+			productReference = ECD9B629215161DF00D92DD8 /* WakeapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECD9B60D215161DE00D92DD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Sergey Borovikov";
+				TargetAttributes = {
+					ECD9B614215161DE00D92DD8 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					ECD9B628215161DF00D92DD8 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = ECD9B614215161DE00D92DD8;
+					};
+				};
+			};
+			buildConfigurationList = ECD9B610215161DE00D92DD8 /* Build configuration list for PBXProject "Wakeapper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECD9B60C215161DE00D92DD8;
+			productRefGroup = ECD9B616215161DE00D92DD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECD9B614215161DE00D92DD8 /* Wakeapper */,
+				ECD9B628215161DF00D92DD8 /* WakeapperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECD9B613215161DE00D92DD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD9B623215161DF00D92DD8 /* LaunchScreen.storyboard in Resources */,
+				ECD9B620215161DF00D92DD8 /* Assets.xcassets in Resources */,
+				ECD9B61E215161DE00D92DD8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD9B627215161DF00D92DD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECD9B611215161DE00D92DD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD9B61B215161DE00D92DD8 /* ViewController.swift in Sources */,
+				ECD9B619215161DE00D92DD8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD9B625215161DF00D92DD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD9B62E215161DF00D92DD8 /* WakeapperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECD9B62B215161DF00D92DD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECD9B614215161DE00D92DD8 /* Wakeapper */;
+			targetProxy = ECD9B62A215161DF00D92DD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECD9B61C215161DE00D92DD8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECD9B61D215161DE00D92DD8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECD9B621215161DF00D92DD8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECD9B622215161DF00D92DD8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECD9B630215161DF00D92DD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECD9B631215161DF00D92DD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECD9B633215161DF00D92DD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Wakeapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wakeapper.Wakeapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECD9B634215161DF00D92DD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Wakeapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wakeapper.Wakeapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECD9B636215161E000D92DD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WakeapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wakeapper.WakeapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wakeapper.app/Wakeapper";
+			};
+			name = Debug;
+		};
+		ECD9B637215161E000D92DD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WakeapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wakeapper.WakeapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wakeapper.app/Wakeapper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECD9B610215161DE00D92DD8 /* Build configuration list for PBXProject "Wakeapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD9B630215161DF00D92DD8 /* Debug */,
+				ECD9B631215161DF00D92DD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECD9B632215161DF00D92DD8 /* Build configuration list for PBXNativeTarget "Wakeapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD9B633215161DF00D92DD8 /* Debug */,
+				ECD9B634215161DF00D92DD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECD9B635215161E000D92DD8 /* Build configuration list for PBXNativeTarget "WakeapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD9B636215161E000D92DD8 /* Debug */,
+				ECD9B637215161E000D92DD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECD9B60D215161DE00D92DD8 /* Project object */;
+}
