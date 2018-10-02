@@ -1,0 +1,13 @@
+# Template information section
+name: "service"
+summary: "Service template for Service oriented architecture"
+author: "Sergey Borovikov"
+version: "0.1.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+- {name: Service.swift, path: Code/service.swift.liquid}
+
+

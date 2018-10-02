@@ -1,0 +1,21 @@
+# Template information section
+name: "mvvm"
+summary: "Swift MVVM module template with UIViewController playing as a View."
+author: "Sergey Borovikov"
+version: "0.1.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+# View
+- {name: ViewController.swift, path: Code/viewcontroller.swift.liquid}
+
+# ViewModel
+- {name: ViewModel.swift, path: Code/viewmodel.swift.liquid}
+
+# Router
+- {name: Router.swift, path: Code/router.swift.liquid}
+
+# Storyboard
+- {name: .storyboard, path: Code/sb.storyboard.liquid}

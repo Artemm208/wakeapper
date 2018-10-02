@@ -1,10 +1,13 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '10.0'
+inhibit_all_warnings!
 
 target 'Wakeapper' do
   
   use_frameworks!
 
+  pod 'R.swift'
+  pod 'SwinjectStoryboard'
   pod 'RxSwift', :git => 'https://github.com/ReactiveX/RxSwift.git', :branch => 'develop'
   pod 'RxCocoa', :git => 'https://github.com/ReactiveX/RxSwift.git', :branch => 'develop'
   pod 'Repeat'

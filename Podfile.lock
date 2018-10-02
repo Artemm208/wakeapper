@@ -1,17 +1,29 @@
 PODS:
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
   - Repeat (0.5.6)
   - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
   - RxSwift (4.3.1)
+  - Swinject (2.5.0)
+  - SwinjectStoryboard (2.0.2):
+    - Swinject (~> 2.4)
 
 DEPENDENCIES:
+  - R.swift
   - Repeat
   - RxCocoa (from `https://github.com/ReactiveX/RxSwift.git`, branch `develop`)
   - RxSwift (from `https://github.com/ReactiveX/RxSwift.git`, branch `develop`)
+  - SwinjectStoryboard
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - R.swift
+    - R.swift.Library
     - Repeat
+    - Swinject
+    - SwinjectStoryboard
 
 EXTERNAL SOURCES:
   RxCocoa:
@@ -30,10 +42,14 @@ CHECKOUT OPTIONS:
     :git: https://github.com/ReactiveX/RxSwift.git
 
 SPEC CHECKSUMS:
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   Repeat: 79fae833c601ef457148ba6ffae276e5c629ab0a
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
+  SwinjectStoryboard: 365698aec11b57c6b14a3c1f52d0308759d377bf
 
-PODFILE CHECKSUM: fe8f6a4f30b72d715b602579101fb3b1c74c3d0b
+PODFILE CHECKSUM: c753db71f29aaf28740ed623b72cc76d73be1f17
 
 COCOAPODS: 1.5.3

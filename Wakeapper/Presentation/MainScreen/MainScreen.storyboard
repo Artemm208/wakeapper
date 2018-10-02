@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KC9-hQ-yae">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Screen View Controller-->
+        <scene sceneID="Ccf-rd-Jpk">
+            <objects>
+                <viewController storyboardIdentifier="MainScreenViewController" id="KC9-hQ-yae" customClass="MainScreenViewController" customModule="Wakeapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iXl-Vn-foY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moved!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zg6-7X-glz">
+                                <rect key="frame" x="0.0" y="52" width="375" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HO6-7s-0S4">
+                                <rect key="frame" x="0.0" y="630" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moved!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3a-2U-odl">
+                                <rect key="frame" x="0.0" y="305" width="375" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whC-TU-npm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5xH-3q-rrz" firstAttribute="bottom" secondItem="HO6-7s-0S4" secondAttribute="bottom" constant="16" id="6D6-Fm-XEZ"/>
+                            <constraint firstItem="HO6-7s-0S4" firstAttribute="leading" secondItem="5xH-3q-rrz" secondAttribute="leading" id="Gbb-iT-DPv"/>
+                            <constraint firstItem="5xH-3q-rrz" firstAttribute="trailing" secondItem="HO6-7s-0S4" secondAttribute="trailing" id="HiU-nr-v5I"/>
+                            <constraint firstItem="whC-TU-npm" firstAttribute="leading" secondItem="5xH-3q-rrz" secondAttribute="leading" id="MPO-cZ-Fkg"/>
+                            <constraint firstItem="E3a-2U-odl" firstAttribute="trailing" secondItem="5xH-3q-rrz" secondAttribute="trailing" id="O1b-KC-MkC"/>
+                            <constraint firstItem="whC-TU-npm" firstAttribute="bottom" secondItem="5xH-3q-rrz" secondAttribute="bottom" id="Org-lA-daa"/>
+                            <constraint firstItem="Zg6-7X-glz" firstAttribute="top" secondItem="5xH-3q-rrz" secondAttribute="top" constant="32" id="PfP-Ac-ERs"/>
+                            <constraint firstItem="whC-TU-npm" firstAttribute="top" secondItem="iXl-Vn-foY" secondAttribute="top" id="Uxh-UP-hZH"/>
+                            <constraint firstItem="whC-TU-npm" firstAttribute="trailing" secondItem="5xH-3q-rrz" secondAttribute="trailing" id="Yeo-T7-Zk4"/>
+                            <constraint firstItem="Zg6-7X-glz" firstAttribute="leading" secondItem="5xH-3q-rrz" secondAttribute="leading" id="niT-3x-4n1"/>
+                            <constraint firstItem="E3a-2U-odl" firstAttribute="centerY" secondItem="iXl-Vn-foY" secondAttribute="centerY" id="sAw-5F-t6K"/>
+                            <constraint firstItem="E3a-2U-odl" firstAttribute="leading" secondItem="5xH-3q-rrz" secondAttribute="leading" id="sce-DG-CHg"/>
+                            <constraint firstItem="5xH-3q-rrz" firstAttribute="trailing" secondItem="Zg6-7X-glz" secondAttribute="trailing" id="uQJ-Sa-oEF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5xH-3q-rrz"/>
+                    </view>
+                    <connections>
+                        <outlet property="bigTimerLabel" destination="HO6-7s-0S4" id="9l4-iN-E8x"/>
+                        <outlet property="button" destination="whC-TU-npm" id="fHU-dG-536"/>
+                        <outlet property="infoLabel" destination="E3a-2U-odl" id="Vu4-wh-iaL"/>
+                        <outlet property="moveLabel" destination="Zg6-7X-glz" id="sWU-WY-W7Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCB-GB-1Fh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="105.69715142428787"/>
+        </scene>
+    </scenes>
+</document>
