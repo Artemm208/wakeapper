@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="khu-wh-DBG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="Ccf-rd-Jpk">
+            <objects>
+                <viewController storyboardIdentifier="StartViewController" id="KC9-hQ-yae" customClass="StartViewController" customModule="Wakeapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iXl-Vn-foY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJc-f3-gWQ">
+                                <rect key="frame" x="168.5" y="323" width="38" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FJc-f3-gWQ" firstAttribute="centerX" secondItem="iXl-Vn-foY" secondAttribute="centerX" id="Ij7-Cy-xQ1"/>
+                            <constraint firstItem="FJc-f3-gWQ" firstAttribute="centerY" secondItem="iXl-Vn-foY" secondAttribute="centerY" id="z8W-cv-VNt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5xH-3q-rrz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6f6-fo-dMF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCB-GB-1Fh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34" y="106"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ahl-V4-jf8">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="khu-wh-DBG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="exH-Wm-Pg0">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KC9-hQ-yae" kind="relationship" relationship="rootViewController" id="Mc6-ln-dOc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TlZ-qv-3TV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-782" y="106"/>
+        </scene>
+    </scenes>
+</document>

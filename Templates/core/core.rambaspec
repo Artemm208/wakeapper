@@ -1,0 +1,13 @@
+# Template information section
+name: "core"
+summary: "Core component template for Service oriented architecture"
+author: "Sergey Borovikov"
+version: "0.1.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+- {name: Core.swift, path: Code/core.swift.liquid}
+
+
