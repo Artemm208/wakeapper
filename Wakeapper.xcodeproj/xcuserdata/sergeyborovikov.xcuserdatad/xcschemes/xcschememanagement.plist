@@ -7,7 +7,20 @@
 		<key>Wakeapper.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>7</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>ECD9B614215161DE00D92DD8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ECD9B628215161DF00D92DD8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

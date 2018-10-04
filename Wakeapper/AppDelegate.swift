@@ -6,6 +6,9 @@
 //  Copyright © 2018 Sergey Borovikov. All rights reserved.
 //
 
+// for R.swift
+// "$PODS_ROOT/R.swift/rswift" generate "$SRCROOT"
+
 import UIKit
 import SwinjectStoryboard
 

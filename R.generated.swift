@@ -31,8 +31,16 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 0 images.
+  /// This `R.image` struct is generated, and contains static references to 1 images.
   struct image {
+    /// Image `datePickerIcon`.
+    static let datePickerIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "datePickerIcon")
+    
+    /// `UIImage(named: "datePickerIcon", bundle: ..., traitCollection: ...)`
+    static func datePickerIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.datePickerIcon, compatibleWith: traitCollection)
+    }
+    
     fileprivate init() {}
   }
   

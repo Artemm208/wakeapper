@@ -18,7 +18,8 @@
 		DA6DD339089EF26605DBF184 /* StartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A94C6C89463548EC2CB736 /* StartRouter.swift */; };
 		EA0FC3C8215D8596CDF125FB /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3673F0B73CAC1100D9C53F /* Start.storyboard */; };
 		EC1C50AA2160A73600EB25C6 /* SwinjectStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1C50A92160A73600EB25C6 /* SwinjectStoryboard+Extension.swift */; };
-		EC1C50B42162653600EB25C6 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1C50B32162653600EB25C6 /* R.generated.swift */; };
+		EC6503D82164665700C63D8A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6503D72164665700C63D8A /* TabBarController.swift */; };
+		EC65041221665FB500C63D8A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC65041121665FB500C63D8A /* R.generated.swift */; };
 		EC9F2C8C2157B81D00585957 /* WakeupDetectorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F2C8B2157B81D00585957 /* WakeupDetectorService.swift */; };
 		ECD9B619215161DE00D92DD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9B618215161DE00D92DD8 /* AppDelegate.swift */; };
 		ECD9B620215161DF00D92DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD9B61F215161DF00D92DD8 /* Assets.xcassets */; };
@@ -50,7 +51,8 @@
 		BDD3FBCB10F2B88A98AE0C4B /* StartViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		E360753AD8C89525AD03FA5D /* Pods-Wakeapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wakeapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wakeapper/Pods-Wakeapper.debug.xcconfig"; sourceTree = "<group>"; };
 		EC1C50A92160A73600EB25C6 /* SwinjectStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Extension.swift"; sourceTree = "<group>"; };
-		EC1C50B32162653600EB25C6 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		EC6503D72164665700C63D8A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EC65041121665FB500C63D8A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		EC9F2C8B2157B81D00585957 /* WakeupDetectorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeupDetectorService.swift; sourceTree = "<group>"; };
 		ECD9B615215161DE00D92DD8 /* Wakeapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wakeapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD9B618215161DE00D92DD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,9 +123,18 @@
 			isa = PBXGroup;
 			children = (
 				12046012C8F1B5C274A843EF /* Start */,
+				EC6503D62164660200C63D8A /* TabBar */,
 				8A5EDF8E37C34CECD998C6B0 /* MainScreen */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EC6503D62164660200C63D8A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EC6503D72164665700C63D8A /* TabBarController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		EC9F2C8A2157B7DF00585957 /* Services */ = {
@@ -137,6 +148,7 @@
 		ECD9B60C215161DE00D92DD8 = {
 			isa = PBXGroup;
 			children = (
+				EC65041121665FB500C63D8A /* R.generated.swift */,
 				ECD9B617215161DE00D92DD8 /* Wakeapper */,
 				ECD9B62C215161DF00D92DD8 /* WakeapperTests */,
 				ECD9B616215161DE00D92DD8 /* Products */,
@@ -157,7 +169,6 @@
 		ECD9B617215161DE00D92DD8 /* Wakeapper */ = {
 			isa = PBXGroup;
 			children = (
-				EC1C50B32162653600EB25C6 /* R.generated.swift */,
 				EC179CF32160809F000949EC /* Presentation */,
 				EC9F2C8A2157B7DF00585957 /* Services */,
 				ECD9B618215161DE00D92DD8 /* AppDelegate.swift */,
@@ -195,6 +206,7 @@
 			buildConfigurationList = ECD9B632215161DF00D92DD8 /* Build configuration list for PBXNativeTarget "Wakeapper" */;
 			buildPhases = (
 				61350477FC951C41CAA69024 /* [CP] Check Pods Manifest.lock */,
+				ECBF2A292166608300A72981 /* ShellScript */,
 				ECD9B611215161DE00D92DD8 /* Sources */,
 				ECD9B612215161DE00D92DD8 /* Frameworks */,
 				ECD9B613215161DE00D92DD8 /* Resources */,
@@ -354,6 +366,23 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wakeapper/Pods-Wakeapper-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ECBF2A292166608300A72981 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -363,13 +392,14 @@
 			files = (
 				ECD9B619215161DE00D92DD8 /* AppDelegate.swift in Sources */,
 				EC1C50AA2160A73600EB25C6 /* SwinjectStoryboard+Extension.swift in Sources */,
+				EC6503D82164665700C63D8A /* TabBarController.swift in Sources */,
 				EC9F2C8C2157B81D00585957 /* WakeupDetectorService.swift in Sources */,
 				3AD2DB89AA011CE1509DCFF3 /* MainScreenViewController.swift in Sources */,
 				70A85C41164F86796B2695D7 /* MainScreenViewModel.swift in Sources */,
 				C71A212E9758F10812EF465E /* MainScreenRouter.swift in Sources */,
 				7581C536D9B359B78634C3D7 /* StartViewController.swift in Sources */,
-				EC1C50B42162653600EB25C6 /* R.generated.swift in Sources */,
 				3E59C5775CA9E6BAF15324A0 /* StartViewModel.swift in Sources */,
+				EC65041221665FB500C63D8A /* R.generated.swift in Sources */,
 				DA6DD339089EF26605DBF184 /* StartRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,7 +562,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wakeapper.Wakeapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -549,7 +579,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wakeapper.Wakeapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
