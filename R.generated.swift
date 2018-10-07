@@ -59,14 +59,27 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 7 storyboards.
   struct storyboard {
+    /// Storyboard `Alarms`.
+    static let alarms = _R.storyboard.alarms()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `MainScreen`.
     static let mainScreen = _R.storyboard.mainScreen()
+    /// Storyboard `Profile`.
+    static let profile = _R.storyboard.profile()
+    /// Storyboard `Settings`.
+    static let settings = _R.storyboard.settings()
     /// Storyboard `Start`.
     static let start = _R.storyboard.start()
+    /// Storyboard `TabBarController`.
+    static let tabBarController = _R.storyboard.tabBarController()
+    
+    /// `UIStoryboard(name: "Alarms", bundle: ...)`
+    static func alarms(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.alarms)
+    }
     
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
     static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
@@ -78,9 +91,24 @@ struct R: Rswift.Validatable {
       return UIKit.UIStoryboard(resource: R.storyboard.mainScreen)
     }
     
+    /// `UIStoryboard(name: "Profile", bundle: ...)`
+    static func profile(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.profile)
+    }
+    
+    /// `UIStoryboard(name: "Settings", bundle: ...)`
+    static func settings(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.settings)
+    }
+    
     /// `UIStoryboard(name: "Start", bundle: ...)`
     static func start(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.start)
+    }
+    
+    /// `UIStoryboard(name: "TabBarController", bundle: ...)`
+    static func tabBarController(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.tabBarController)
     }
     
     fileprivate init() {}
@@ -115,8 +143,28 @@ struct _R: Rswift.Validatable {
   
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
-      try start.validate()
+      try alarms.validate()
+      try settings.validate()
+      try tabBarController.validate()
       try mainScreen.validate()
+      try start.validate()
+      try profile.validate()
+    }
+    
+    struct alarms: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let alarmsViewController = StoryboardViewControllerResource<AlarmsViewController>(identifier: "AlarmsViewController")
+      let bundle = R.hostingBundle
+      let name = "Alarms"
+      
+      func alarmsViewController(_: Void = ()) -> AlarmsViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: alarmsViewController)
+      }
+      
+      static func validate() throws {
+        if _R.storyboard.alarms().alarmsViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'alarmsViewController' could not be loaded from storyboard 'Alarms' as 'AlarmsViewController'.") }
+      }
+      
+      fileprivate init() {}
     }
     
     struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType {
@@ -146,6 +194,38 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
     
+    struct profile: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "Profile"
+      let profileViewController = StoryboardViewControllerResource<ProfileViewController>(identifier: "ProfileViewController")
+      
+      func profileViewController(_: Void = ()) -> ProfileViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: profileViewController)
+      }
+      
+      static func validate() throws {
+        if _R.storyboard.profile().profileViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'profileViewController' could not be loaded from storyboard 'Profile' as 'ProfileViewController'.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct settings: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "Settings"
+      let settingsViewController = StoryboardViewControllerResource<SettingsViewController>(identifier: "SettingsViewController")
+      
+      func settingsViewController(_: Void = ()) -> SettingsViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: settingsViewController)
+      }
+      
+      static func validate() throws {
+        if _R.storyboard.settings().settingsViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'settingsViewController' could not be loaded from storyboard 'Settings' as 'SettingsViewController'.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
     struct start: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
       typealias InitialController = UIKit.UINavigationController
       
@@ -159,6 +239,19 @@ struct _R: Rswift.Validatable {
       
       static func validate() throws {
         if _R.storyboard.start().startViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'startViewController' could not be loaded from storyboard 'Start' as 'StartViewController'.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct tabBarController: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = TabBarController
+      
+      let bundle = R.hostingBundle
+      let name = "TabBarController"
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "datePickerIcon") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'datePickerIcon' is used in storyboard 'TabBarController', but couldn't be loaded.") }
       }
       
       fileprivate init() {}

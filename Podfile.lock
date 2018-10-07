@@ -2,6 +2,7 @@ PODS:
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
+  - RAMAnimatedTabBarController (4.0.0)
   - Repeat (0.5.7)
   - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
@@ -12,6 +13,7 @@ PODS:
 
 DEPENDENCIES:
   - R.swift
+  - RAMAnimatedTabBarController
   - Repeat
   - RxCocoa (from `https://github.com/ReactiveX/RxSwift.git`, branch `develop`)
   - RxSwift (from `https://github.com/ReactiveX/RxSwift.git`, branch `develop`)
@@ -21,6 +23,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - R.swift
     - R.swift.Library
+    - RAMAnimatedTabBarController
     - Repeat
     - Swinject
     - SwinjectStoryboard
@@ -44,12 +47,13 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  RAMAnimatedTabBarController: 78f63fd6411958f269cc8af0a906002134d39bf5
   Repeat: 73c5ee602aed8f3c7bf1aa12d4cd0d3dc3edea0a
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
   SwinjectStoryboard: 688f096033103e66ffcf6ca678211acd7d7be505
 
-PODFILE CHECKSUM: 6ec0fe13ccdb3e5965b88e57c0b4533476e09c8f
+PODFILE CHECKSUM: 406b7f21adc282486d521cd4ba1b1b4877cf9522
 
 COCOAPODS: 1.5.3

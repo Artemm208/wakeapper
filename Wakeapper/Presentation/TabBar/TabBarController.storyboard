@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NVd-ux-G2q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Vpm-Lr-qGh">
+            <objects>
+                <tabBarController id="NVd-ux-G2q" customClass="TabBarController" customModule="Wakeapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Aeq-9l-2dZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Xg0-9r-IBe" kind="relationship" relationship="viewControllers" id="Bth-Ia-euh"/>
+                        <segue destination="NzH-Uk-BcM" kind="relationship" relationship="viewControllers" id="YpX-LF-tso"/>
+                        <segue destination="B3R-fd-3Pr" kind="relationship" relationship="viewControllers" id="GLq-wP-L8W"/>
+                        <segue destination="17x-KF-tuU" kind="relationship" relationship="viewControllers" id="xXP-US-8VH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tnm-Ac-Lgv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-310" y="304"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="C2Z-LO-AIu">
+            <objects>
+                <navigationController id="Xg0-9r-IBe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Main" image="datePickerIcon" id="BPd-ci-Gtt" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="miQ-TY-NDM" id="Rdn-Wa-HoX"/>
+                        </connections>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="5Ce-wg-Clx">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IBU-l5-NNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="miQ-TY-NDM" customClass="RAMFumeAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="414" y="304"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="efA-ZK-sra">
+            <objects>
+                <navigationController id="NzH-Uk-BcM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="datePickerIcon" id="tGk-YR-eFy" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="tSL-jr-mgs" id="4T4-NZ-cNF"/>
+                        </connections>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="9bm-8d-5pf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D3v-10-UBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="tSL-jr-mgs" customClass="RAMFumeAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="1153" y="304"/>
+        </scene>
+        <!--Alarms-->
+        <scene sceneID="CsW-nF-efx">
+            <objects>
+                <navigationController id="B3R-fd-3Pr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Alarms" image="datePickerIcon" id="BYf-uI-jZe" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="9mN-nq-VUj" id="Hir-oz-7gg"/>
+                        </connections>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kk1-9f-VnS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHx-v9-Nt9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="9mN-nq-VUj" customClass="RAMFumeAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="1914" y="304"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="Pvb-bv-VPq">
+            <objects>
+                <navigationController id="17x-KF-tuU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="datePickerIcon" id="CbE-d9-6B4" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="hVn-Tb-WYb" id="r4n-KX-QGm"/>
+                        </connections>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8g0-Lf-4lG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcC-df-OwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="hVn-Tb-WYb" customClass="RAMFumeAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="2644" y="304"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="datePickerIcon" width="18" height="20"/>
+    </resources>
+</document>

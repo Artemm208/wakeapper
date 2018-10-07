@@ -7,7 +7,7 @@ target 'Wakeapper' do
   use_frameworks!
 
   pod 'R.swift'
-  # pod 'SwiftGen'
+  pod 'RAMAnimatedTabBarController'
   pod 'SwinjectStoryboard'
   pod 'RxSwift', :git => 'https://github.com/ReactiveX/RxSwift.git', :branch => 'develop'
   pod 'RxCocoa', :git => 'https://github.com/ReactiveX/RxSwift.git', :branch => 'develop'

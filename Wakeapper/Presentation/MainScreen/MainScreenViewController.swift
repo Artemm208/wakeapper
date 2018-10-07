@@ -48,7 +48,7 @@ class MainScreenViewController: UIViewController {
     }
     
     private func setupUI() {
-        self.title = NSLocalizedString("", comment: "")
+        
     }
     
     private func bindViewModelInput() {

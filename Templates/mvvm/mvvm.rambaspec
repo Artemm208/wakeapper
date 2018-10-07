@@ -17,5 +17,8 @@ code_files:
 # Router
 - {name: Router.swift, path: Code/router.swift.liquid}
 
+# Factory
+- {name: Factory.swift, path: Code/factory.swift.liquid}
+
 # Storyboard
 - {name: .storyboard, path: Code/sb.storyboard.liquid}

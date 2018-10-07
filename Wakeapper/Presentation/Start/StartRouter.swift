@@ -18,8 +18,10 @@ final class StartRouter {}
 
 extension StartRouter: StartRouterI {
     func segueToMain(from context: StartViewController) {
-        let mainViewController = SwinjectStoryboard.create(name: "MainScreen", bundle: nil)
-        .instantiateViewController(withIdentifier: "MainScreenViewController")
-        context.navigationController?.pushViewController(mainViewController, animated: true)
+//        let mainViewController = SwinjectStoryboard.create(name: "MainScreen", bundle: nil)
+//        .instantiateViewController(withIdentifier: "MainScreenViewController")
+//        context.navigationController?.pushViewController(mainViewController, animated: true)
+        let tabBarC = TabBarController()
+        context.navigationController?.pushViewController(tabBarC, animated: true)
     }
 }

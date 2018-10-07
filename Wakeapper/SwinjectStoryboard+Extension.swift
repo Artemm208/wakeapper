@@ -14,23 +14,11 @@ extension SwinjectStoryboard {
         
         // MARK: - Services
         defaultContainer.register(WakeupDetectorServiceI.self) { _ in WakupDetectorService() }
-        
-        // MARK: - Routers
-        defaultContainer.register(StartRouterI.self) { _ in StartRouter() }
-        defaultContainer.register(MainScreenRouterI.self) { _ in MainScreenRouter() }
-        
-        // MARK: - ViewModels
-        defaultContainer.register(MainScreenViewModelI.self) { resolver in
-            MainScreenViewModel(wakeUpDetectorService: resolver.resolve(WakeupDetectorServiceI.self)!)
-        }
-        
-        // MARK: - ViewControllers
-        defaultContainer.storyboardInitCompleted(StartViewController.self) { resolver, controller in
-            controller.router = resolver.resolve(StartRouterI.self)
-        }
-        defaultContainer.storyboardInitCompleted(MainScreenViewController.self) { resolver, controller in
-            controller.viewModel = resolver.resolve(MainScreenViewModelI.self)
-            controller.router = resolver.resolve(MainScreenRouterI.self)
-        }
+
+        // MARK: - UI Moduls
+        SwinjectStoryboard.setupStartFactory()
+        SwinjectStoryboard.setupMainScreenFactory()
+        SwinjectStoryboard.setupAlarmsFactory()
+        SwinjectStoryboard.setupSettingsFactory()
     }
 }
