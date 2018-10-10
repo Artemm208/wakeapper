@@ -24,6 +24,7 @@ class MainScreenViewController: UIViewController {
     @IBOutlet weak var bigTimerLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var moveDetectorView: UIView!
     
     private var wakeupType: WakeupDetectorType = .none {
         didSet { self.markupView() }
@@ -48,7 +49,7 @@ class MainScreenViewController: UIViewController {
     }
     
     private func setupUI() {
-        
+        moveDetectorView.layer.cornerRadius = moveDetectorView.frame.size.height/2
     }
     
     private func bindViewModelInput() {
@@ -60,17 +61,17 @@ class MainScreenViewController: UIViewController {
     private func bindViewModelOutput() {
         
         viewModel.moveDetection
-            .filter { $0 == true }
             .subscribe(onNext: { [weak self] isMovedDetection in
                 print(isMovedDetection)
                 self?.fadeAnimateLabel()
+                self?.fadeAnimateMoveDetectorView()
             }).disposed(by: disposeBag)
-        
+
         viewModel.bigTimerObservable.asObservable()
             .subscribe(onNext: { sec in
                 self.bigTimerLabel.text = String(sec)
             }).disposed(by: disposeBag)
-        
+
         viewModel.wakeupDetectorType
             .subscribe(onNext: { [weak self] wakeupType in
                 self?.wakeupType = wakeupType
@@ -79,8 +80,15 @@ class MainScreenViewController: UIViewController {
     
     private func fadeAnimateLabel() {
         self.moveLabel.alpha = 1
-        UIView.animate(withDuration: TimeInterval(20)) {
+        UIView.animate(withDuration: TimeInterval(10)) {
             self.moveLabel.alpha = 0
+        }
+    }
+    
+    private func fadeAnimateMoveDetectorView() {
+        self.moveDetectorView.alpha = 1
+        UIView.animate(withDuration: TimeInterval(0.5)) {
+            self.moveDetectorView.alpha = 0
         }
     }
     
@@ -88,11 +96,11 @@ class MainScreenViewController: UIViewController {
         switch wakeupType {
         case .none:
             self.view.backgroundColor = .white
-        case .sleep:
+        case .sleepWasDetected:
             self.view.backgroundColor = .red
             self.infoLabel.text = "You fell asleep"
             
-        case .wakeup:
+        case .wakeupWasDetected:
             self.view.backgroundColor = .green
             self.infoLabel.text = "You're awake!"
 

@@ -18,7 +18,7 @@ protocol MainScreenViewModelI {
     
     // Output
     var wakeupDetectorType: Observable<WakeupDetectorType> { get }
-    var moveDetection: Observable<Bool> { get }
+    var moveDetection: Observable<Void> { get }
     var bigTimerObservable: Observable<Int> { get }
 }
 
@@ -34,10 +34,10 @@ final class MainScreenViewModel {
 extension MainScreenViewModel: MainScreenViewModelI {
 
     func onButton() {
-        _wakeUpDetectorService.startWakupDetection()
+        _wakeUpDetectorService?.startWakupDetection()
     }
-    
+
     var wakeupDetectorType: Observable<WakeupDetectorType> { return _wakeUpDetectorService.wakeupDetectorType }
-    var moveDetection: Observable<Bool> { return _wakeUpDetectorService.moveDetection }
+    var moveDetection: Observable<Void> { return _wakeUpDetectorService.moveDetection }
     var bigTimerObservable: Observable<Int> { return _wakeUpDetectorService.bigTimerObservable }
 }

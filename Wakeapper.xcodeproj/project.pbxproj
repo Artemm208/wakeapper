@@ -33,6 +33,13 @@
 		EC11C7912169CEA5004C888B /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC11C7902169CEA5004C888B /* TabBarController.storyboard */; };
 		EC11C793216A6152004C888B /* StartFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC11C792216A6152004C888B /* StartFactory.swift */; };
 		EC11C795216A6530004C888B /* MainScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC11C794216A6530004C888B /* MainScreenFactory.swift */; };
+		EC11C799216BAB74004C888B /* AccelerometerDetectorCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC11C798216BAB74004C888B /* AccelerometerDetectorCore.swift */; };
+		EC11C79B216BB074004C888B /* DeviceMotionDetectorCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC11C79A216BB074004C888B /* DeviceMotionDetectorCore.swift */; };
+		EC11C79D216BB2A3004C888B /* GyroDetectorCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC11C79C216BB2A3004C888B /* GyroDetectorCore.swift */; };
+		EC11C79F216C4DF7004C888B /* TimersCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC11C79E216C4DF7004C888B /* TimersCore.swift */; };
+		EC11C7A1216E4663004C888B /* ServicesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC11C7A0216E4663004C888B /* ServicesFactory.swift */; };
+		EC11C7A3216E467B004C888B /* CoreComponentsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC11C7A2216E467B004C888B /* CoreComponentsFactory.swift */; };
+		EC11C7A5216E4CAC004C888B /* presentationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC11C7A4216E4CAC004C888B /* presentationFactory.swift */; };
 		EC1C50AA2160A73600EB25C6 /* SwinjectStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1C50A92160A73600EB25C6 /* SwinjectStoryboard+Extension.swift */; };
 		EC6503D82164665700C63D8A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6503D72164665700C63D8A /* TabBarController.swift */; };
 		EC65041221665FB500C63D8A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC65041121665FB500C63D8A /* R.generated.swift */; };
@@ -83,6 +90,13 @@
 		EC11C7902169CEA5004C888B /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 		EC11C792216A6152004C888B /* StartFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartFactory.swift; sourceTree = "<group>"; };
 		EC11C794216A6530004C888B /* MainScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenFactory.swift; sourceTree = "<group>"; };
+		EC11C798216BAB74004C888B /* AccelerometerDetectorCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerDetectorCore.swift; sourceTree = "<group>"; };
+		EC11C79A216BB074004C888B /* DeviceMotionDetectorCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMotionDetectorCore.swift; sourceTree = "<group>"; };
+		EC11C79C216BB2A3004C888B /* GyroDetectorCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroDetectorCore.swift; sourceTree = "<group>"; };
+		EC11C79E216C4DF7004C888B /* TimersCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersCore.swift; sourceTree = "<group>"; };
+		EC11C7A0216E4663004C888B /* ServicesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesFactory.swift; sourceTree = "<group>"; };
+		EC11C7A2216E467B004C888B /* CoreComponentsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreComponentsFactory.swift; sourceTree = "<group>"; };
+		EC11C7A4216E4CAC004C888B /* presentationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presentationFactory.swift; sourceTree = "<group>"; };
 		EC1C50A92160A73600EB25C6 /* SwinjectStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		EC6503D72164665700C63D8A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EC65041121665FB500C63D8A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
@@ -181,9 +195,22 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		EC11C797216BAA5C004C888B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EC11C7A2216E467B004C888B /* CoreComponentsFactory.swift */,
+				EC11C79A216BB074004C888B /* DeviceMotionDetectorCore.swift */,
+				EC11C798216BAB74004C888B /* AccelerometerDetectorCore.swift */,
+				EC11C79C216BB2A3004C888B /* GyroDetectorCore.swift */,
+				EC11C79E216C4DF7004C888B /* TimersCore.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		EC179CF32160809F000949EC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				EC11C7A4216E4CAC004C888B /* presentationFactory.swift */,
 				12046012C8F1B5C274A843EF /* Start */,
 				EC6503D62164660200C63D8A /* TabBar */,
 				8A5EDF8E37C34CECD998C6B0 /* MainScreen */,
@@ -206,6 +233,7 @@
 		EC9F2C8A2157B7DF00585957 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EC11C7A0216E4663004C888B /* ServicesFactory.swift */,
 				EC9F2C8B2157B81D00585957 /* WakeupDetectorService.swift */,
 			);
 			path = Services;
@@ -215,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				EC65041121665FB500C63D8A /* R.generated.swift */,
+				EC1C50A92160A73600EB25C6 /* SwinjectStoryboard+Extension.swift */,
 				ECD9B617215161DE00D92DD8 /* Wakeapper */,
 				ECD9B62C215161DF00D92DD8 /* WakeapperTests */,
 				ECD9B616215161DE00D92DD8 /* Products */,
@@ -237,11 +266,11 @@
 			children = (
 				EC179CF32160809F000949EC /* Presentation */,
 				EC9F2C8A2157B7DF00585957 /* Services */,
+				EC11C797216BAA5C004C888B /* Core */,
 				ECD9B618215161DE00D92DD8 /* AppDelegate.swift */,
 				ECD9B61F215161DF00D92DD8 /* Assets.xcassets */,
 				ECD9B621215161DF00D92DD8 /* LaunchScreen.storyboard */,
 				ECD9B624215161DF00D92DD8 /* Info.plist */,
-				EC1C50A92160A73600EB25C6 /* SwinjectStoryboard+Extension.swift */,
 			);
 			path = Wakeapper;
 			sourceTree = "<group>";
@@ -478,17 +507,23 @@
 				EC1C50AA2160A73600EB25C6 /* SwinjectStoryboard+Extension.swift in Sources */,
 				EC6503D82164665700C63D8A /* TabBarController.swift in Sources */,
 				EC11C793216A6152004C888B /* StartFactory.swift in Sources */,
+				EC11C79B216BB074004C888B /* DeviceMotionDetectorCore.swift in Sources */,
 				EC9F2C8C2157B81D00585957 /* WakeupDetectorService.swift in Sources */,
 				3AD2DB89AA011CE1509DCFF3 /* MainScreenViewController.swift in Sources */,
 				70A85C41164F86796B2695D7 /* MainScreenViewModel.swift in Sources */,
+				EC11C7A5216E4CAC004C888B /* presentationFactory.swift in Sources */,
 				C71A212E9758F10812EF465E /* MainScreenRouter.swift in Sources */,
 				7581C536D9B359B78634C3D7 /* StartViewController.swift in Sources */,
+				EC11C7A3216E467B004C888B /* CoreComponentsFactory.swift in Sources */,
+				EC11C79F216C4DF7004C888B /* TimersCore.swift in Sources */,
 				3E59C5775CA9E6BAF15324A0 /* StartViewModel.swift in Sources */,
 				EC65041221665FB500C63D8A /* R.generated.swift in Sources */,
 				DA6DD339089EF26605DBF184 /* StartRouter.swift in Sources */,
 				EC11C795216A6530004C888B /* MainScreenFactory.swift in Sources */,
 				B38903C2856DFD68A2E8670F /* AlarmsViewController.swift in Sources */,
+				EC11C799216BAB74004C888B /* AccelerometerDetectorCore.swift in Sources */,
 				218286E1C3F00FCD69808CC9 /* AlarmsViewModel.swift in Sources */,
+				EC11C79D216BB2A3004C888B /* GyroDetectorCore.swift in Sources */,
 				D8BBA5ED3A5DB88A9273D8C7 /* AlarmsRouter.swift in Sources */,
 				7013427189EA42350C82C6F4 /* AlarmsFactory.swift in Sources */,
 				536A8139E6C4CEBB75F5AEC4 /* SettingsViewController.swift in Sources */,
@@ -496,6 +531,7 @@
 				DDCB314623D565C54992B0FB /* SettingsRouter.swift in Sources */,
 				6833607B5DAAFF95536D8171 /* SettingsFactory.swift in Sources */,
 				EF69B08D5AD3BCD68F9E96EE /* ProfileViewController.swift in Sources */,
+				EC11C7A1216E4663004C888B /* ServicesFactory.swift in Sources */,
 				6D41FE7EB4AE90E9F4B39D83 /* ProfileViewModel.swift in Sources */,
 				156DED7C427524410BB8EE30 /* ProfileRouter.swift in Sources */,
 				4ABB5003A533D358E7D7326E /* ProfileFactory.swift in Sources */,

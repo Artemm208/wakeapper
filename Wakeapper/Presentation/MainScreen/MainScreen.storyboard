@@ -39,12 +39,21 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whC-TU-npm">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqq-Nz-GVn">
+                                <rect key="frame" x="177.5" y="125.5" width="20" height="20"/>
+                                <color key="backgroundColor" red="0.59988072780000001" green="1" blue="0.55021454550000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="oeg-Ui-9wd"/>
+                                    <constraint firstAttribute="width" constant="20" id="zw5-oo-PLs"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5xH-3q-rrz" firstAttribute="bottom" secondItem="HO6-7s-0S4" secondAttribute="bottom" constant="16" id="6D6-Fm-XEZ"/>
                             <constraint firstItem="HO6-7s-0S4" firstAttribute="leading" secondItem="5xH-3q-rrz" secondAttribute="leading" id="Gbb-iT-DPv"/>
                             <constraint firstItem="5xH-3q-rrz" firstAttribute="trailing" secondItem="HO6-7s-0S4" secondAttribute="trailing" id="HiU-nr-v5I"/>
+                            <constraint firstItem="wqq-Nz-GVn" firstAttribute="centerX" secondItem="iXl-Vn-foY" secondAttribute="centerX" id="IO9-jO-j4q"/>
                             <constraint firstItem="whC-TU-npm" firstAttribute="leading" secondItem="5xH-3q-rrz" secondAttribute="leading" id="MPO-cZ-Fkg"/>
                             <constraint firstItem="E3a-2U-odl" firstAttribute="trailing" secondItem="5xH-3q-rrz" secondAttribute="trailing" id="O1b-KC-MkC"/>
                             <constraint firstItem="whC-TU-npm" firstAttribute="bottom" secondItem="5xH-3q-rrz" secondAttribute="bottom" id="Org-lA-daa"/>
@@ -55,6 +64,7 @@
                             <constraint firstItem="E3a-2U-odl" firstAttribute="centerY" secondItem="iXl-Vn-foY" secondAttribute="centerY" id="sAw-5F-t6K"/>
                             <constraint firstItem="E3a-2U-odl" firstAttribute="leading" secondItem="5xH-3q-rrz" secondAttribute="leading" id="sce-DG-CHg"/>
                             <constraint firstItem="5xH-3q-rrz" firstAttribute="trailing" secondItem="Zg6-7X-glz" secondAttribute="trailing" id="uQJ-Sa-oEF"/>
+                            <constraint firstItem="wqq-Nz-GVn" firstAttribute="top" secondItem="Zg6-7X-glz" secondAttribute="bottom" constant="16" id="yhe-b8-Aas"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5xH-3q-rrz"/>
                     </view>
@@ -63,6 +73,7 @@
                         <outlet property="bigTimerLabel" destination="HO6-7s-0S4" id="9l4-iN-E8x"/>
                         <outlet property="button" destination="whC-TU-npm" id="fHU-dG-536"/>
                         <outlet property="infoLabel" destination="E3a-2U-odl" id="Vu4-wh-iaL"/>
+                        <outlet property="moveDetectorView" destination="wqq-Nz-GVn" id="w7W-xx-l7L"/>
                         <outlet property="moveLabel" destination="Zg6-7X-glz" id="sWU-WY-W7Q"/>
                     </connections>
                 </viewController>
