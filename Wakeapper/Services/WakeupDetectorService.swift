@@ -39,6 +39,8 @@ protocol WakeupDetectorServiceI {
 
 final class WakupDetectorService {
     
+    private let disposeBag = DisposeBag()
+    
     private let _wakeupDetecterType = PublishSubject<WakeupDetectorType>()
     private let _moveDetection = PublishSubject<Void>()
     
@@ -58,6 +60,28 @@ final class WakupDetectorService {
         self.accelerometerDetectorCore = accelerometerDetectorCore
         self.gyroDetectoryCore = gyroDetectorCore
         self.timersCore = timersCore
+        self.setupTimersEvents()
+    }
+    
+    private func setupTimersEvents() {
+        
+        _moveDetection.subscribe(onNext: { [weak self] in
+            self?.timersCore.resetSmallTimer()
+        }).disposed(by: disposeBag)
+        
+        Observable.combineLatest(_bigTimerObservable, _smallTimerObservable) { ($0, $1) }
+            .subscribe(onNext: { [weak self] bigTimerValue, smallTimerValue in
+                
+                if smallTimerValue == 0 && bigTimerValue > 0 {
+                    self?._wakeupDetecterType.onNext(.sleepWasDetected)
+                    self?.stopWakupDetection()
+                } else if bigTimerValue == 0 && smallTimerValue > 0 {
+                    self?._wakeupDetecterType.onNext(.wakeupWasDetected)
+                    self?.stopWakupDetection()
+                }
+                
+            }).disposed(by: disposeBag)
+        
     }
     
     private var timersConfiguration: TimersCore.Configuration {
@@ -78,6 +102,7 @@ extension WakupDetectorService: WakeupDetectorServiceI {
     var smallTimerObservable: Observable<Int> { return _smallTimerObservable }
     
     func startWakupDetection() {
+        stopWakupDetection()
         _wakeupDetecterType.onNext(.none)
         deviceMotionDetectorCore.startUpdateDeviceMotion(with: _moveDetection)
         accelerometerDetectorCore.startUpdateAccelerometer(with: _moveDetection)

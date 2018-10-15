@@ -62,7 +62,6 @@ class MainScreenViewController: UIViewController {
         
         viewModel.moveDetection
             .subscribe(onNext: { [weak self] isMovedDetection in
-                print(isMovedDetection)
                 self?.fadeAnimateLabel()
                 self?.fadeAnimateMoveDetectorView()
             }).disposed(by: disposeBag)
