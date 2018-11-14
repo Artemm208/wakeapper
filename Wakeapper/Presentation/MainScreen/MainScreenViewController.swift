@@ -7,6 +7,15 @@
 //  Copyright © 2018 Company. All rights reserved.
 //
 
+/*
+ 1. Сработал локальный пуш (нужно понять на сколько длинную мелодию можно вставить на звук пуша)
+ 2. Тап на пуш, запуск приложения.
+ З. Запускается детектор просыпания (WakeupDetectorService для UI отображения процесса отслеживания).
+ 4. Регистрируется новая локальная Push нотификация, через время просыпания (+ 10 секунд, для возможности отозвать локальную нотификацию).
+ 5. Если приложение не сворачивается все время просыпания, ориентируемся на WakeupDetectorService, отменяем локальную нотификацию.
+ 6. Если приложение свернули, то при обработке нажатия на нотификацию используем ActivityHistoryService
+ */
+
 import UIKit
 import RxCocoa
 import RxSwift
@@ -40,6 +49,7 @@ class MainScreenViewController: UIViewController {
         
         bindViewModelInput()
         bindViewModelOutput()
+        setupBackgroundEvents()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -75,6 +85,25 @@ class MainScreenViewController: UIViewController {
             .subscribe(onNext: { [weak self] wakeupType in
                 self?.wakeupType = wakeupType
             }).disposed(by: disposeBag)
+        
+        viewModel.activityHistory
+            .subscribe(onSuccess: { _ in
+                print("activityHistory SUCCESS!")
+            }) { _ in
+                print("activityHistory FAILE!")
+        }.disposed(by: disposeBag)
+    }
+    
+    private func setupBackgroundEvents() {
+        NotificationCenter.default.rx.notification(UIApplication.didBecomeActiveNotification)
+            .subscribe(onNext: { event in
+//            print(event)
+        }).disposed(by: disposeBag)
+        
+        NotificationCenter.default.rx.notification(UIApplication.didEnterBackgroundNotification)
+            .subscribe(onNext: { event in
+//                print(event)
+            }).disposed(by: disposeBag)
     }
     
     private func fadeAnimateLabel() {
@@ -105,4 +134,12 @@ class MainScreenViewController: UIViewController {
 
         }
     }
+}
+
+// test
+extension MainScreenViewController {
+    
+    
+    
+    
 }

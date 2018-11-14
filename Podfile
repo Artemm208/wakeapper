@@ -12,6 +12,7 @@ target 'Wakeapper' do
   pod 'RxSwift', :git => 'https://github.com/ReactiveX/RxSwift.git', :branch => 'develop'
   pod 'RxCocoa', :git => 'https://github.com/ReactiveX/RxSwift.git', :branch => 'develop'
   pod 'Repeat'
+  pod 'SwiftDate'
 
   post_install do |installer|
       installer.pods_project.targets.each do |target|

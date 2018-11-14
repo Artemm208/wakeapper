@@ -30,6 +30,8 @@
 		DA6DD339089EF26605DBF184 /* StartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A94C6C89463548EC2CB736 /* StartRouter.swift */; };
 		DDCB314623D565C54992B0FB /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A834329B97C411AFFF5BF2 /* SettingsRouter.swift */; };
 		EA0FC3C8215D8596CDF125FB /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3673F0B73CAC1100D9C53F /* Start.storyboard */; };
+		EC05E3F02182101E0091A495 /* ActivityHistoryCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05E3EF2182101E0091A495 /* ActivityHistoryCore.swift */; };
+		EC05E3F2218216430091A495 /* ActivityHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05E3F1218216430091A495 /* ActivityHistoryService.swift */; };
 		EC11C7912169CEA5004C888B /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC11C7902169CEA5004C888B /* TabBarController.storyboard */; };
 		EC11C793216A6152004C888B /* StartFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC11C792216A6152004C888B /* StartFactory.swift */; };
 		EC11C795216A6530004C888B /* MainScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC11C794216A6530004C888B /* MainScreenFactory.swift */; };
@@ -45,6 +47,7 @@
 		EC65041221665FB500C63D8A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC65041121665FB500C63D8A /* R.generated.swift */; };
 		EC9A2624EDA2C4A9765A3569 /* Alarms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DE4C0C5BD90ADCC9402DC9 /* Alarms.storyboard */; };
 		EC9F2C8C2157B81D00585957 /* WakeupDetectorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F2C8B2157B81D00585957 /* WakeupDetectorService.swift */; };
+		ECAC2383219BD91D0023867B /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC2382219BD91D0023867B /* ArrayExtensions.swift */; };
 		ECD9B619215161DE00D92DD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9B618215161DE00D92DD8 /* AppDelegate.swift */; };
 		ECD9B620215161DF00D92DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD9B61F215161DF00D92DD8 /* Assets.xcassets */; };
 		ECD9B623215161DF00D92DD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD9B621215161DF00D92DD8 /* LaunchScreen.storyboard */; };
@@ -87,6 +90,8 @@
 		E360753AD8C89525AD03FA5D /* Pods-Wakeapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wakeapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wakeapper/Pods-Wakeapper.debug.xcconfig"; sourceTree = "<group>"; };
 		E3DBD40F434E33145407C954 /* ProfileRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
 		EAD119EA3EBBC9B8EAE81ACD /* SettingsFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsFactory.swift; sourceTree = "<group>"; };
+		EC05E3EF2182101E0091A495 /* ActivityHistoryCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityHistoryCore.swift; sourceTree = "<group>"; };
+		EC05E3F1218216430091A495 /* ActivityHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityHistoryService.swift; sourceTree = "<group>"; };
 		EC11C7902169CEA5004C888B /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 		EC11C792216A6152004C888B /* StartFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartFactory.swift; sourceTree = "<group>"; };
 		EC11C794216A6530004C888B /* MainScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenFactory.swift; sourceTree = "<group>"; };
@@ -101,6 +106,7 @@
 		EC6503D72164665700C63D8A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EC65041121665FB500C63D8A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		EC9F2C8B2157B81D00585957 /* WakeupDetectorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeupDetectorService.swift; sourceTree = "<group>"; };
+		ECAC2382219BD91D0023867B /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		ECD9B615215161DE00D92DD8 /* Wakeapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wakeapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD9B618215161DE00D92DD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECD9B61F215161DF00D92DD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -202,6 +208,7 @@
 				EC11C79A216BB074004C888B /* DeviceMotionDetectorCore.swift */,
 				EC11C798216BAB74004C888B /* AccelerometerDetectorCore.swift */,
 				EC11C79C216BB2A3004C888B /* GyroDetectorCore.swift */,
+				EC05E3EF2182101E0091A495 /* ActivityHistoryCore.swift */,
 				EC11C79E216C4DF7004C888B /* TimersCore.swift */,
 			);
 			path = Core;
@@ -235,8 +242,17 @@
 			children = (
 				EC11C7A0216E4663004C888B /* ServicesFactory.swift */,
 				EC9F2C8B2157B81D00585957 /* WakeupDetectorService.swift */,
+				EC05E3F1218216430091A495 /* ActivityHistoryService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		ECAC2381219BD9090023867B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC2382219BD91D0023867B /* ArrayExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		ECD9B60C215161DE00D92DD8 = {
@@ -264,6 +280,7 @@
 		ECD9B617215161DE00D92DD8 /* Wakeapper */ = {
 			isa = PBXGroup;
 			children = (
+				ECAC2381219BD9090023867B /* Extensions */,
 				EC179CF32160809F000949EC /* Presentation */,
 				EC9F2C8A2157B7DF00585957 /* Services */,
 				EC11C797216BAA5C004C888B /* Core */,
@@ -455,12 +472,13 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Wakeapper/Pods-Wakeapper-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Wakeapper/Pods-Wakeapper-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/Repeat/Repeat.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 			);
@@ -471,12 +489,13 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Repeat.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wakeapper/Pods-Wakeapper-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wakeapper/Pods-Wakeapper-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EC11C796216A6EEB004C888B /* ShellScript */ = {
@@ -504,6 +523,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECD9B619215161DE00D92DD8 /* AppDelegate.swift in Sources */,
+				EC05E3F02182101E0091A495 /* ActivityHistoryCore.swift in Sources */,
 				EC1C50AA2160A73600EB25C6 /* SwinjectStoryboard+Extension.swift in Sources */,
 				EC6503D82164665700C63D8A /* TabBarController.swift in Sources */,
 				EC11C793216A6152004C888B /* StartFactory.swift in Sources */,
@@ -518,6 +538,7 @@
 				EC11C79F216C4DF7004C888B /* TimersCore.swift in Sources */,
 				3E59C5775CA9E6BAF15324A0 /* StartViewModel.swift in Sources */,
 				EC65041221665FB500C63D8A /* R.generated.swift in Sources */,
+				ECAC2383219BD91D0023867B /* ArrayExtensions.swift in Sources */,
 				DA6DD339089EF26605DBF184 /* StartRouter.swift in Sources */,
 				EC11C795216A6530004C888B /* MainScreenFactory.swift in Sources */,
 				B38903C2856DFD68A2E8670F /* AlarmsViewController.swift in Sources */,
@@ -535,6 +556,7 @@
 				6D41FE7EB4AE90E9F4B39D83 /* ProfileViewModel.swift in Sources */,
 				156DED7C427524410BB8EE30 /* ProfileRouter.swift in Sources */,
 				4ABB5003A533D358E7D7326E /* ProfileFactory.swift in Sources */,
+				EC05E3F2218216430091A495 /* ActivityHistoryService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,12 +713,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6R8JR72J6T;
 				INFOPLIST_FILE = Wakeapper/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wakeapper.Wakeapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -709,11 +731,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6R8JR72J6T;
 				INFOPLIST_FILE = Wakeapper/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wakeapper.Wakeapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

@@ -20,14 +20,18 @@ protocol MainScreenViewModelI {
     var wakeupDetectorType: Observable<WakeupDetectorType> { get }
     var moveDetection: Observable<Void> { get }
     var bigTimerObservable: Observable<Int> { get }
+    var activityHistory: Single<Void> { get }
 }
 
 final class MainScreenViewModel {
 
     private let _wakeUpDetectorService: WakeupDetectorServiceI!
+    private let _activityHistoryService: ActivityHistoryServiceI!
     
-    init(wakeUpDetectorService: WakeupDetectorServiceI) {
+    init(wakeUpDetectorService: WakeupDetectorServiceI,
+         activityHistoryService: ActivityHistoryServiceI) {
         _wakeUpDetectorService = wakeUpDetectorService
+        _activityHistoryService = activityHistoryService
     }
 }
 
@@ -40,4 +44,5 @@ extension MainScreenViewModel: MainScreenViewModelI {
     var wakeupDetectorType: Observable<WakeupDetectorType> { return _wakeUpDetectorService.wakeupDetectorType }
     var moveDetection: Observable<Void> { return _wakeUpDetectorService.moveDetection }
     var bigTimerObservable: Observable<Int> { return _wakeUpDetectorService.bigTimerObservable }
+    var activityHistory: Single<Void> { return _activityHistoryService.activityHistorySingle(forLastMins: 1, smallTimePeriod: 20) }
 }

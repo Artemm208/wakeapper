@@ -14,6 +14,7 @@ extension SwinjectStoryboard {
     static func setupServiciesFactory() {
         
         setupWakeupDetectorServiceFactory()
+        setupActivityHistoryServiceFactory()
     }
     
 }

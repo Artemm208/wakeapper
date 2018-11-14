@@ -16,5 +16,6 @@ extension SwinjectStoryboard {
         setupGyroDetectorCoreFactory()
         setupDeviceMotionDetectorCoreFactory()
         setupAccelerometerDetectorCoreFactory()
+        setupMotionActivityHistoryCoreFactory()
     }
 }

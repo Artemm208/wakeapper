@@ -13,7 +13,8 @@ extension SwinjectStoryboard {
     class func setupMainScreenFactory() {
         defaultContainer.register(MainScreenRouterI.self) { _ in MainScreenRouter() }
         defaultContainer.register(MainScreenViewModelI.self) { resolver in
-            MainScreenViewModel(wakeUpDetectorService: resolver.resolve(WakeupDetectorServiceI.self)!)
+            MainScreenViewModel(wakeUpDetectorService: resolver.resolve(WakeupDetectorServiceI.self)!,
+                                activityHistoryService: resolver.resolve(ActivityHistoryServiceI.self)!)
         }
         defaultContainer.storyboardInitCompleted(MainScreenViewController.self) { resolver, controller in
             controller.viewModel = resolver.resolve(MainScreenViewModelI.self)
