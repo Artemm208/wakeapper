@@ -44,5 +44,5 @@ extension MainScreenViewModel: MainScreenViewModelI {
     var wakeupDetectorType: Observable<WakeupDetectorType> { return _wakeUpDetectorService.wakeupDetectorType }
     var moveDetection: Observable<Void> { return _wakeUpDetectorService.moveDetection }
     var bigTimerObservable: Observable<Int> { return _wakeUpDetectorService.bigTimerObservable }
-    var activityHistory: Single<Void> { return _activityHistoryService.activityHistorySingle(forLastMins: 1, smallTimePeriod: 20) }
+    var activityHistory: Single<Void> { return _activityHistoryService.activityHistorySingle(forLastMins: 1, smallTimePeriodInSec: 20) }
 }

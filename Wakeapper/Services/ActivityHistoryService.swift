@@ -35,16 +35,36 @@ final class ActivityHistoryService {
         self.activityHistoryCore = motionActivityHistoryCore
     }
     
-    private func detectActivity(activities: [CMMotionActivity], smallTimePeriodInSec: Int) -> Bool {
-        for index in 0...activities.count - 1 {
-            let pair = activities.pair(at: index)
-            let firstActivitySec = pair.0.startDate.timeIntervalSince1970
-            let secondActivitySec = pair.1?.startDate.timeIntervalSince1970 ?? 0
-            let delta = Int(secondActivitySec - firstActivitySec)
-            if delta > smallTimePeriodInSec {
+    private func detectActivity(activities: [CMMotionActivity], smallTimePeriodInSec: Int, forLastMins minutes: Int) -> Bool {
+        
+        var timesIntervalsInSecForChek: [Int] = []
+        
+        var startDatePeriod: Date?
+        var endDatePeriod: Date?
+        
+        activities.forEach { activity in
+            
+            if activity.stationary == true && startDatePeriod == nil && endDatePeriod == nil {
+                startDatePeriod = activity.startDate
+            } else if startDatePeriod != nil {
+                endDatePeriod = activity.startDate
+                let delta = Int(endDatePeriod?.timeIntervalSince1970 ?? 0) - Int(startDatePeriod?.timeIntervalSince1970 ?? 0)
+                timesIntervalsInSecForChek.append(delta)
+                startDatePeriod = nil
+                endDatePeriod = nil
+            }
+        }
+        
+        if timesIntervalsInSecForChek.isEmpty {
+            return false
+        }
+        
+        for timeIntervalInSecForCheck in timesIntervalsInSecForChek {
+            if timeIntervalInSecForCheck > smallTimePeriodInSec {
                 return false
             }
         }
+        
         return true
     }
 }
@@ -54,7 +74,7 @@ extension ActivityHistoryService: ActivityHistoryServiceI {
     func activityHistorySingle(forLastMins minutes: Int, smallTimePeriodInSec: Int) -> Single<Void> {
         return activityHistoryCore.getTrackingActivityHistory(forLastMins: minutes)
             .flatMap { [weak self] activities in
-                if self?.detectActivity(activities: activities, smallTimePeriodInSec: smallTimePeriodInSec) ?? false {
+                if self?.detectActivity(activities: activities, smallTimePeriodInSec: smallTimePeriodInSec, forLastMins: minutes) ?? false {
                     return Single.just(())
                 } else {
                     return Single.error(ActivityHistoryCore.MotionActivityHistoryError.motionActivityNotEnable)
